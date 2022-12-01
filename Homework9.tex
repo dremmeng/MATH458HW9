@@ -1,0 +1,65 @@
+\documentclass{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr, lastpage}
+\usepackage{tikz}
+\usepackage{amsmath,amssymb,amsthm}
+\usetikzlibrary{calc}
+\usepackage{enumitem}
+\usepackage{soul}
+\usepackage{multicol}
+
+% Universes
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+
+% Groups commands
+\newcommand{\inv}{^{-1}}
+\newcommand{\lcm}{\mathrm{lcm}}
+\newcommand{\lr}[1]{\langle #1 \rangle}
+\newcommand{\Inn}{\mathrm{Inn}}
+\newcommand{\iso}{\cong}
+\newcommand{\normal}{\triangleleft}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\parindent}{0cm}
+\pagestyle{fancy}
+\lhead{MATH458 Abstract Algebra}
+\rhead{Homework 9}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\section*{Homework 9}
+
+Unless otherwise indicated, you must justify all answers/steps. See the Canvas assignment for more information about the homework requirements. 
+
+\begin{enumerate}
+    
+    \item A ring element $a$ is called \emph{idempotent} if $a^2=a$. The following are problems regarding idempotent elements. Each problem is otherwise unrelated.
+    \begin{enumerate}
+        \item Prove that is $a$ is an idempotent ring element, then $a^n=a$ for all positive integers $n$. 
+        
+        \item Show that any idempotent element in a commutative ring with unity other than 0 or 1 is a zero-divisor. 
+
+    \end{enumerate}
+
+    \item Find all units, zero-divisors, idempotents, and nilpotent elements in ring $\ZZ_3\oplus \ZZ_6$. (Recall: an element $a$ is nilpotent if $a^n=0$ for some positive integer $n$.)
+
+    
+    \item Suppose that $a$ and $b$ belong to an integral domain $R$. If $a^m=b^m$ and $a^n=b^n$, where $m$ and $n$ positive integers that are relatively prime, prove that $a=b$. Note that the elements $a,b$ are not necessarily units, so we cannot assume $a\inv$ or $b\inv$  (or powers of $a\inv$ or $b\inv$) exist.
+    
+    \item The following are problems regarding the characteristic of a ring. 
+    \begin{enumerate}
+        \item Let $R$ be a ring with $m$ elements. Show that the characteristic of $R$ divides $m$. 
+         
+        \item Show that any finite field has order $p^n$, where $p$ is a prime. (Hint: Use facts about finite abelian groups.)
+        
+    \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
